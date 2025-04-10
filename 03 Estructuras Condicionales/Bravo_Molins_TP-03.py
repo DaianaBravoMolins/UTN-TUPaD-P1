@@ -216,31 +216,40 @@
 # enero, marzo, mayo, julio, agosto, octubre, diciembre: 31 días
 # febrero: 28 días.
 
-# hemisferioElegido = input("Ingrese en que hemisferio se encuentra: N para norte o S para sur: ")
-# mesElegido = input("Ingrese el mes actual: ")
-# diaElegido = int(input("Ingrese el dia actual: "))
+#variante
+hemisferioElegido = input("Ingrese en que hemisferio se encuentra: N para norte o S para sur: ")
+mesElegido = input("Ingrese el mes actual: ")
+diaElegido = int(input("Ingrese el dia actual: "))
 
-# if hemisferioElegido.upper() == "N":
-#     if (mesElegido.lower() == "diciembre" and diaElegido >=21 and diaElegido <= 31) or (mesElegido.lower() == "enero" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "febrero" and diaElegido >=1 and diaElegido <= 28) or (mesElegido.lower() == "marzo" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Invierno")
-#     elif (mesElegido.lower() == "marzo" and diaElegido >=21 and diaElegido <=31) or (mesElegido.lower() == "abril" and diaElegido >=1 and  diaElegido <= 30) or (mesElegido.lower() == "mayo" and diaElegido >=1 and diaElegido <= 31) or (mesElegido.lower() == "junio" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Primavera")
-#     elif (mesElegido.lower() == "junio" and diaElegido >=21 and diaElegido <=30) or (mesElegido.lower() == "julio" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "agosto" and diaElegido >=1 and diaElegido <= 31) or (mesElegido.lower() == "septiembre" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Verano")
-#     elif (mesElegido.lower() == "septiembre" and diaElegido >=21 and diaElegido <=30) or(mesElegido.lower() == "octubre" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "noviembre" and diaElegido >=1 and diaElegido <= 30) or (mesElegido.lower() == "diciembre" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Otoño")
-#     else:
-#         print("Algun dato es erroneo")
-# elif hemisferioElegido.upper() == "S":
-#     if (mesElegido.lower() == "diciembre" and diaElegido >= 21 and diaElegido <=31) or (mesElegido.lower() == "enero" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "febrero" and diaElegido >=1 and diaElegido <= 28) or (mesElegido.lower() == "marzo" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Verano")
-#     elif (mesElegido.lower() == "marzo" and diaElegido >=21 and diaElegido <=31) or (mesElegido.lower() == "abril" and diaElegido >=1 and  diaElegido <= 30) or (mesElegido.lower() == "mayo" and diaElegido >=1 and diaElegido <= 31) or (mesElegido.lower() == "junio" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Otoño")
-#     elif (mesElegido.lower() == "junio" and diaElegido >=21 and diaElegido <=30) or (mesElegido.lower() == "julio" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "agosto" and diaElegido >=1 and diaElegido <= 31) or (mesElegido.lower() == "septiembre" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Invierno")
-#     elif (mesElegido.lower() == "septiembre" and diaElegido >=21 and diaElegido <=30) or (mesElegido.lower() == "octubre" and diaElegido >=1 and  diaElegido <= 31) or (mesElegido.lower() == "noviembre" and diaElegido >=1 and diaElegido <= 30) or (mesElegido.lower() == "diciembre" and diaElegido >= 1 and diaElegido <= 20):
-#         print("Primavera")
-#     else:
-#         print("Algun dato es erroneo")
-# else:
-#     print("La letra ingresada para el hemisferio es erronea.")
+opcion1 = (mesElegido.lower() == "diciembre" and 21 <= diaElegido <= 31) or (mesElegido.lower() == "enero" and 1 <= diaElegido <= 31) or (mesElegido.lower() == "febrero" and 1 <= diaElegido <= 28) or (mesElegido.lower() == "marzo" and 1 <= diaElegido <= 20)
+
+opcion2 = (mesElegido.lower() == "marzo" and 21 <= diaElegido <= 31) or (mesElegido.lower() == "abril" and 1 <= diaElegido <= 30) or (mesElegido.lower() == "mayo" and 1<= diaElegido <= 31) or (mesElegido.lower() == "junio" and 1 <= diaElegido <= 20)
+
+opcion3 =  (mesElegido.lower() == "junio" and 21 <= diaElegido <=30) or (mesElegido.lower() == "julio" and 1 <= diaElegido <= 31) or (mesElegido.lower() == "agosto" and 1<= diaElegido <= 31) or (mesElegido.lower() == "septiembre" and 1 <= diaElegido <= 20)
+
+opcion4 = (mesElegido.lower() == "septiembre" and 21 <= diaElegido <=30) or(mesElegido.lower() == "octubre" and 1 <= diaElegido <= 31) or (mesElegido.lower() == "noviembre" and 1<= diaElegido <= 30) or (mesElegido.lower() == "diciembre" and 1<= diaElegido <= 20)
+
+if hemisferioElegido.upper() == "N":
+    if opcion1 == True:
+        print("Invierno")
+    elif opcion2 == True:
+        print("Primavera")
+    elif opcion3 == True:
+        print("Verano")
+    elif opcion4 == True:
+        print("Otoño")
+    else:
+        print("Algun dato es erroneo")
+elif hemisferioElegido.upper() == "S":
+    if opcion1 == True:
+        print("Verano")
+    elif opcion2 == True:
+        print("Otoño")
+    elif opcion3 == True:
+        print("Invierno")
+    elif opcion4:
+        print("Primavera")
+    else:
+        print("Algun dato es erroneo")
+else:
+    print("La letra ingresada para el hemisferio es erronea.")
