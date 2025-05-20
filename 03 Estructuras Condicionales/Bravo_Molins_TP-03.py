@@ -4,7 +4,7 @@
 # 1) Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años,
 # deberá mostrar un mensaje en pantalla que diga “Es mayor de edad”.
 
-# # edadUsuario = int(input("Por favor ingrese su edad: "))
+# edadUsuario = int(input("Por favor ingrese su edad: "))
 
 # if edadUsuario >= 18:
 #     print("Es mayor de edad.")
@@ -65,7 +65,7 @@
 
 # contraseñaIngresada = input("Por favor ingrese una contraseña de entre 8 y 14 caracteres: ")
 
-# if len(contraseñaIngresada) >= 8 and len(contraseñaIngresada) <= 14:
+# if  8 <= len(contraseñaIngresada) <= 14:
 #     print("Ha ingresado una contraseña correcta")
 # else:
 #     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres")

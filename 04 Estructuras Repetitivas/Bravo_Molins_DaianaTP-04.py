@@ -3,7 +3,7 @@
 # 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
 
-# for i in range (0, 100+1):
+# for i in range (0, 100):
 #     print(i)
 
 # 2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
@@ -73,7 +73,7 @@
 #         break
 #     else: 
 #         contador += 1
-#         bandera = False
+#         bandera = False        #Recien cunado se adivine el num aleatorio, la bandera se va a usar para el print
 #         print("Vamos ! Reintente.")
 
 # if bandera == False:
@@ -91,7 +91,7 @@
 
 # numeroIngresado = int(input("Ingrese un numero entero positivo: "))
 # acumulador = 0
-# bandera = True
+
 # if numeroIngresado <= 0:
 #     print("Numero fuera de rango.")
 
@@ -99,8 +99,8 @@
 #     acumulador += i     #aca se van sumando en forma sucesiva los ingresos
 #     bandera = False
 
-# if bandera == False:
-#     print("La suma sucesiva de numeros desde 0 hasta el n° elegido es de",acumulador)
+
+# print("La suma sucesiva de numeros desde 0 hasta el n° elegido es de",acumulador)
 
 # 8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
 # programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
